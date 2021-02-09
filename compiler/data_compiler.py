@@ -1,3 +1,7 @@
+# Copyright 2021 - All rights reserved.
+# Huseyin Alper Karadeniz
+# Deniz Can Gezgin
+
 import json
 import requests
 from bs4 import BeautifulSoup
