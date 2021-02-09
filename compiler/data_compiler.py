@@ -29,6 +29,7 @@ for i in range(length):
     current_details = lesson.parent.findNext('td')
     current_table = table_details[i + 1]
     course_details = (lesson.a.text).split(" - ")
+    
     #course code
     course_code = course_details[-2]
     if course_code[-1] != "R" and course_code[-1] != "L":
@@ -40,15 +41,17 @@ for i in range(length):
         data[term][course_code][1] = course_name
         #course address
         course_address = lesson.a["href"]
-
         details = current_details
         fieldlabeltext = details.find_all("span", class_="fieldlabeltext")
+        
         #course faculty
         course_faculty = (fieldlabeltext[3].next_sibling)[1:-1].split(" ")[-1]
         data[term][course_code][0] = course_faculty
+        
         #course credit
         course_credit = float(((current_table.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling)[1:-1].strip(" ").split(" "))[0])
         data[term][course_code][4] = course_credit
+        
         #course instructors
         primary_instructor_raw = (current_table.find("abbr", {"title": "Primary"})).previous_sibling[:-1]
         instructor_dict = data[term][course_code][5]
@@ -67,10 +70,12 @@ for i in range(length):
         r = requests.get(course_address)
         source = BeautifulSoup(r.content,"lxml")
         match = source.find_all("td", class_="dddefault")
+        
         #course capacity
         course_capacity = int(match[1].text)
         data[term][course_code][2] = data[term][course_code][2] + course_capacity
         data[term][course_code][5][primary_instructor][0] = data[term][course_code][5][primary_instructor][0] + course_capacity
+        
         #course actual
         course_actual = int(match[2].text)
         data[term][course_code][3] = data[term][course_code][3] + course_actual
