@@ -2,7 +2,6 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-#edit term
 term = "202001"
 filename = term + ".html"
 with open(filename,"r", encoding="utf8") as html_file:
@@ -14,7 +13,6 @@ json_name = 'data_' + term + '.json'
 with open(json_name,"r", encoding='utf-8') as json_file:
     data = json.load(json_file)
 
-# data = {"2019-2020 Fall":{"AL 102":["SL","Academic Literaties","Total","Actual", "3.0 SU",{"Ekrem Sabit Şimşek": [123,124], "Ali Nihat Eken": [163,156]},"CoRequisites","PreRequisities" ]}}
 data[term] = {}
 
 lesson_details = soup.find_all("td", class_="dddefault")
@@ -94,30 +92,3 @@ for i in range(length):
 
 with open(json_name, 'w', encoding='utf-8') as json_file:
     json.dump(data, json_file, ensure_ascii=False)
-
-dm_program_codes = ["BSCS-DM","BACULT-DM","BAECON-DM","BSEE-DM","BSIE-DM","BAIS-DM","BAMAN-DM",
-                 "BSMAT-DM","BSME-DM","BSBIO-DM","BAPOLS-DM","BAPSIR-DM","BAPSY-DM","BAVACD-DM"]
-dm_program_names = ["Computer Science and Engineering","Cultural Studies","Economics",
-                 "Electronics Engineering","Industrial Engineering","International Studies",
-                 "Management","Materials Science and Nano Engineering","Mechatronics Engineering",
-                 "Molecular Biology, Genetics and Bioengineering","Political Science",
-                 "Political Science and International Relations","Psychology",
-                 "Visual Arts and Visual Communications Design"]
-
-major_program_codes = ["BSCS","BAECON","BSEE","BSMS","BAMAN","BSMAT","BSME","BSBIO",
-                       "BAPSIR","BAPSY","BAVACD"]
-major_program_names = ["Computer Science and Engineering","Economics","Electronics Engineering",
-                       "Industrial Engineering (Previous Name: Manufacturing Systems Engineering)",
-                       "Management","Materials Science and Nano Engineering (Previous Name: Materials Science and Engineering)",
-                       "Mechatronics Engineering","Molecular Biology, Genetics and Bioengineering (Pre. Name: Biological Sciences and Bioengineering)",
-                       "Political Science and International Relations","Psychology",
-                       "Visual Arts and Visual Communications Design"]
-
-minor_program_codes = ["ARTTC-MINOR","ANALY-MINOR","CHEM-MINOR","CONF-MINOR","DECB-MINOR",
-                       "ENERG-MINOR","ENTREP-MINOR","FIN-MINOR","GENDER-MINOR","MATH-MINOR",
-                       "PHIL-MINOR","PHYS-MINOR","PSY-MINOR"]
-minor_program_names = ["Art Theory and Criticism Minor","Business Analytics Minor",
-                       "Chemistry Minor","Conflict Analysis & Resolution Minor",
-                       "Decision and Behavior Minor","Energy Minor","Entrepreneurship Minor",
-                       "Finance Minor","Gender and Women's Studies (Previous Name: Gender Studies) Minor",
-                       "Mathematics Minor","Philosophy Minor","Physics Minor","Psychology Minor"]
