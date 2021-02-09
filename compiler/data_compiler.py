@@ -49,7 +49,7 @@ for i in range(length):
         data[term][course_code][0] = course_faculty
         
         #course credit
-        course_credit = float(((current_table.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling.previous_sibling)[1:-1].strip(" ").split(" "))[0])
+        course_credit = float(((current_table.previous_element.previous_element.previous_element.previous_element.previous_element.previous_element.previous_element.previous_element.previous_element.previous_element)[1:-1].strip(" ").split(" "))[0])
         data[term][course_code][4] = course_credit
         
         #course instructors
