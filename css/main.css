@@ -1,6 +1,9 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+    overflow: hidden;
+    font-family: sans-serif;
 }
 
 body {
@@ -9,7 +12,38 @@ body {
 
 header {
     width: 100vw;
-    height: 20vh;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
+    padding: 0.6rem;
+}
+
+#welcome {
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+#welcome h2 {
+    padding: 8rem 1rem 8rem 1rem;
+    text-align: center;
+}
+
+#introduction {
+    width: 75%;
+}
+
+#introduction p {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
 }
 
 #backtotop {
