@@ -1,1 +1,1 @@
-consle.log("vakit tokat vakti")
+console.log("vakit tokat vakti")
