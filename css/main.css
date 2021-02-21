@@ -101,6 +101,10 @@ nav .nav-wrapper ul li .page-activated {
     text-align: center;
 }
 
+.footer {
+    background-image: url(../src/footer-background.jpg);
+}
+
 footer {
     text-align: center;
     font-size: 0.9rem;
@@ -159,7 +163,8 @@ footer .footer-bottom .footer-name:hover {
     transition: none;
     background: #F3FDFF;
     border-radius: 50%;
-    border: 1px solid #004288;
+    opacity: 0.75;
+    box-shadow: 0 0 0.25rem #098AA9;
 }
 
 .top-arrow-icon {
@@ -170,4 +175,15 @@ footer .footer-bottom .footer-name:hover {
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
+}
+
+.students-icon {
+    background: url('../src/students.svg');
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
