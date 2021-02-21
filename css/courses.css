@@ -1,0 +1,510 @@
+.main {
+    padding-top: 6rem;
+}
+
+.course-essentials {
+    background-image: url(../src/sakura-banner.jpg);
+    position: relative;
+    text-align: center;
+    padding: 5rem;
+    font-weight: 700;
+    background-color: rgba(23,59,106,.86);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.course-essentials a {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.course-essentials:before {
+    content: "";
+    background-color: rgba(23,59,106,.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#term-selection-select {
+    opacity: 0.5;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    outline: none;
+    padding: 1rem 4rem 1rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem #022f6c;
+    appearance: none;
+    background: url(../src/favicon.png) 96% / 15% no-repeat #EEE;
+}
+
+#term-selection-select:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.course-code {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.course-name {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.course-term {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.course-term-change {
+    padding-top: 1rem;
+}
+
+.course-term-change a {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.course-term-change a:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.statistics-main {
+    background: #FDFDFD;
+    padding-bottom: 6rem;
+}
+
+.main-statistics-title {
+    text-align: center;
+    padding: 4rem;
+    font-size: 1.6rem;
+    color: #03033C;
+    font-weight: 500;
+}
+
+.main-statistics {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+}
+
+.main-statistics-top {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+}
+
+.main-statistics-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+}
+
+.main-statistic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #FFFFFF;
+    width: 33%;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem #DEE1E5;
+}
+
+.main-statistic:hover {
+    box-shadow: 0 0 1.25rem #C1C4C8;
+    z-index: 15;
+    transform: scale(0.95);
+}
+
+.main-statistic-top {
+    cursor: default;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+
+.main-statistic-bottom {
+    margin-bottom: 2.5rem;
+    color: #9EA0A7;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.statistics-instructors {
+    background: #FFFFFF;
+}
+
+.instructor-statistics-title {
+    text-align: center;
+    padding: 4rem 4rem 0 4rem;
+    font-size: 1.6rem;
+    color: #03033C;
+    font-weight: 500;
+}
+
+.instructor-statistics {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding: 5rem 1rem;
+}
+
+.instructors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.instructor {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    cursor: default;
+    box-shadow: 0 0 0.25rem #EFEFEF;
+}
+
+.instructor:hover {
+    box-shadow: 0 0 0.875rem #EFEFEF;
+}
+
+.instructor:hover .bar::after {
+    background: #14B393;
+}
+
+.instructor-name {
+    display: block;
+    width: 35%;
+    text-align: right;
+    line-height: 2rem;
+}
+
+.instructor-quota {
+    display: block;
+    width: 15%;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.instructors-bar-chart{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bar{
+    width: 50%;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    color: #F9FFFF;
+    background-color: #F7F7F7;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.bar-inner {
+    float: left;
+    background-color: #43A8E4;
+}
+
+.bar-inner-rate {
+    padding-left: 1rem;
+}
+
+.instructor:hover .bar-inner {
+    background-color: #14B393;;
+}
+
+.instructor-chart {
+    padding-top: 2.5rem;
+}
+
+.requisites {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    background: #FDFDFD;
+}
+
+.prerequisites {
+    text-align: center;
+}
+
+.corequisites {
+    text-align: center;
+}
+
+.requisite-title {
+    cursor: default;
+    font-size: 0.9rem;
+    color: #4F4F4F;
+}
+
+.requisite {
+    padding-top: 0.75rem;
+}
+
+.requisite a {
+    text-decoration: none;
+}
+
+.linked-requisite a {
+    color: #070742;
+}
+
+.linked-requisite a:hover {
+    color: #0E7194;
+}
+
+.statistics-others {
+    background: #FFFFFF;
+}
+
+.other-terms-title {
+    text-align: center;
+    padding: 4rem 4rem 0 4rem;
+    font-size: 1.6rem;
+    color: #03033C;
+    font-weight: 500;
+}
+
+.other-terms {
+    user-select: none;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.year-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.year {
+    width: 25%;
+    padding: 1rem;
+}
+
+.inactive-year .year-title {
+    color: #ADADAD;
+    background: #F1F1F1;
+    box-shadow: none;
+}
+
+.inactive-year .year-title:hover {
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+.year-title {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 0 0.5rem #dee1e5;
+    border-radius: 1rem;
+}
+
+.year-title:hover {
+    cursor: default;
+    box-shadow: 0 0 0.75rem #C1C4C8;
+}
+
+.year-terms {
+    display: block;
+}
+
+.term {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 0.5rem #DEE1E5;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: #004288;
+    text-align: center;
+}
+
+.term:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    box-shadow: 0 0 0.75rem #C1C4C8;
+}
+
+.term-title {
+    font-weight: 500;
+}
+
+.inactive-term {
+    color: #ADADAD;
+    background: #F1F1F1;
+    opacity: 0.75;
+    transform: scale(0.95);
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.inactive-term:hover {
+    cursor: default;
+    transform: scale(0.95);
+    box-shadow: none;
+    
+}
+
+.future-term {
+    display: none !important;
+}
+
+.future-year {
+    display: none !important;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.tns-outer {
+    width: 90% !important;
+}
+
+.controls {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;    
+    background: transparent;
+    width: 100%;    
+    top: 50%;
+    transform: translatey(-50%);
+    align-items: center;    
+    justify-content: space-between;
+}
+
+.controls:focus {
+    outline: none;
+}
+
+.controls li:hover {
+    cursor: pointer;
+}
+
+.controls .prev {
+    width: 5%;
+    text-align: center;
+    float: left;
+}
+
+.controls .prev:focus {
+    outline: none;
+}
+
+.controls .next {
+    width: 5%;
+    text-align: center;
+    float: right;
+}
+
+.controls .next:focus {
+    outline: none;
+}
+
+.course-catalog-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    text-align: center;
+    background: #FDFDFD;
+}
+
+.course-catalog-entry-title {
+    padding-bottom: 4rem;
+    font-size: 1.6rem;
+    color: #03033C;
+    font-weight: 500;
+}
+
+.course-catalog-entry-description {
+    color: #A7B2B8;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .main-statistics {
+        flex-direction: column;
+    }
+
+    .main-statistics-top {
+        width: 90%;
+    }
+
+    .main-statistics-bottom {
+        width: 90%;
+    }
+
+    .instructors {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .instructor-statistics {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .instructor {
+        flex-direction: column;
+    }
+    
+    .instructor-name {
+        width: auto;
+        text-align: center;
+    }
+    
+    .bar {
+        width: auto;
+    }
+    
+    .instructor-quota {
+        width: auto;
+        text-align: center;
+    }
+    
+}
