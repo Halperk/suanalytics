@@ -526,7 +526,7 @@
             $(document).ready(function(){$(window).scroll(function(){if ($(window).scrollTop()>100){$("#backtotop").fadeIn();} else {$("#backtotop").fadeOut();}})$("#backtotop").click(function(){$("html,body").animate({scrollTop:0},700);return false;})})
         </script>
         <script>
-            let data;fetch('../data/data_IF100.json').then(results => results.json()).then(json_content => {data = json_content;});
+            let data;fetch('https://raw.githubusercontent.com/Halperk/suanalytics/main/data/data_IF100.json').then(results => results.json()).then(json_content => {data = json_content;});
         </script>
         <script type="text/javascript">
             function drawChart(instructorData) {google.charts.load("current", {packages:["corechart"]});google.charts.setOnLoadCallback(drawChart);function drawChart() {var data = google.visualization.arrayToDataTable(instructorData);var options = {title: 'Student Distributions',pieHole: 0.3,};var chart = new google.visualization.PieChart(document.getElementById('donutchart'));chart.draw(data, options);
