@@ -462,6 +462,18 @@
     font-size: 1rem;
 }
 
+.slider-arrow-prev {
+    transform: rotate(270deg);
+}
+
+.slider-arrow-next {
+    transform: rotate(90deg);
+}
+
+.slider-arrow:hover {
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 1024px) {
 
     .main-statistics {
