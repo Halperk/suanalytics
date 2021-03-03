@@ -1,3 +1,5 @@
+let lastTerm;
+
 const slider = tns({
     container: '.slider',
     loop: false,
@@ -36,17 +38,25 @@ function scrollToPosition(position) {
     });
 }
 
-initializePage();
-
 function initializePage() {
-    const terms = Object.keys(data);
-    const lastTerm = terms[terms.length-2];
+    terms = Object.keys(data);
+    lastTerm = terms[terms.length-2];
     changeTerm(lastTerm);
 
     for (x = 0; x < terms.length - 1; x++) {
         document.getElementById(terms[x]).classList.toggle("inactive-term");
     }
 }
+
+setTimeout(initializePage, 150);
+
+function checkTerms() {
+    if (document.getElementById(lastTerm).classList.contains("inactive-term")) {
+        initializePage()
+    }
+}
+
+setTimeout(checkTerms, 1500);
 
 function changeTermBottom(termNew) {
     changeTerm(termNew);
