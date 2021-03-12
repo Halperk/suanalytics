@@ -52,8 +52,12 @@
         </nav>
         <div class="course-search-container">
             <h1>Course Search</h1>
+            <div class="course-search-search-type-wrapper">
+                <div id="course-search-type-code" class="course-search-search-type search-type-activated no-select" onclick="searchFromCourseCode()">Course Code</div>
+                <div id="course-search-type-name" class="course-search-search-type no-select" onclick="searchFromCourseName()">Course Name</div>
+            </div>
             <div class="course-search-wrapper" id="search-wrapper">
-                <input class="course-search-bar-input" id="course-search-bar" type="text" name="courseSearchBar" placeholder="Search a course" />
+                <input class="course-search-bar-input" id="course-search-bar" type="text" name="courseSearchBar" placeholder="Search a course from course code" />
             </div>
             <ul class="course-search-list" id="course-search-list">
                 <!-- Filtered Course List -->
