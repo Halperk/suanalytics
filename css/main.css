@@ -5,10 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -68,24 +64,66 @@ nav .nav-wrapper ul li .page-activated {
     color: #C6333D;
 }
 
-#welcome {
-    padding-top: 6rem;
+.welcome {
     display: flex;
+    flex-direction: column;
     height: auto;
+    margin: 0;
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+    background: #FEFEFE;
 }
 
-#welcome h2 {
-    padding: 8rem 1rem 8rem 1rem;
+.welcome h3 {
+    padding-top: 0.6rem;
+    color: #555555;
+    font-weight: 500;
+}
+
+.introduction {
     text-align: center;
+    padding: 3rem 10rem;
 }
 
-#introduction {
-    padding-bottom: 5rem;
-    width: 75%;
-}
-
-#introduction p {
+.features {
+    background: #FEFEFE;
     text-align: center;
+    padding: 3rem;
+}
+
+.feature {
+    padding-bottom: 3rem;
+}
+
+.feature-main {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.feature-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-description {
+    margin: 1rem;
+}
+
+.feature-button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: #C6333D;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: 1px solid #C6333D;
+    text-decoration: none;
+}
+
+.feature-button:hover {
+    color: #C6333D;
+    background: transparent;
 }
 
 .footer {
