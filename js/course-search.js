@@ -1,7 +1,35 @@
 const courseList = document.getElementById('course-search-list');
 const searchBar = document.getElementById('course-search-bar');
 
+const searchTypeButtonCode = document.getElementById('course-search-type-code');
+const searchTypeButtonName = document.getElementById('course-search-type-name');
+let searchType = "course-code";
+
+function searchFromCourseCode() {
+    searchTypeButtonName.classList.remove('search-type-activated');
+    searchTypeButtonCode.classList.add('search-type-activated');
+    searchBar.placeholder = "Search a course from course code";
+    searchType = "course-code";
+}
+
+function searchFromCourseName() {
+    searchTypeButtonCode.classList.remove('search-type-activated');
+    searchTypeButtonName.classList.add('search-type-activated');
+    searchBar.placeholder = "Search a course from course name";
+    searchType = "course-name";
+}
+
 searchBar.addEventListener('keyup', (e) => {
+    if (searchType === "course-code") {
+        searchCoursesByCode(e);
+    } else if (searchType === "course-name") {
+        searchCoursesByName(e);
+    } else {
+        searchCoursesByCode(e);
+    }
+});
+
+function searchCoursesByCode(e) {
     const searchString = e.target.value.toUpperCase().replace(/\s/g, "");
     if (searchString != "") {
         const filteredCourses = data.filter((course) => {
@@ -14,11 +42,10 @@ searchBar.addEventListener('keyup', (e) => {
     else {
         courseList.innerHTML = ''
     }
-});
+}
 
-/*
-searchBar.addEventListener('keyup', (ev) => {
-    const searchStringName = ev.target.value.toLowerCase();
+function searchCoursesByName(e) {
+    const searchStringName = e.target.value.toLowerCase();
     if (searchStringName != "") {
         const filteredCoursesName = data.filter((course) => {
             return (
@@ -27,12 +54,11 @@ searchBar.addEventListener('keyup', (ev) => {
         });
         displayCourses(filteredCoursesName);
     }
-    
+
     else {
         courseList.innerHTML = ''
     }
-});
-*/
+}
 
 const displayCourses = (courses) => {
     let link;
