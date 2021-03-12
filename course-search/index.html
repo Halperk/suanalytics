@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="copyright" content="(c) 2021">
+        <meta name="title" content="SUAnalytics">
+        <meta name="description" content="Sabanci University analytics created by SUAnalytics; course offering comparisons, instructor and fill rate details, top courses, and detailed analyses in various topics about Sabancı University.">
+        <meta name="author" content="Co-Authored by Huseyin Alper Karadeniz, Deniz Can Gezgin">
+        <meta name="keywords" content="SUAnalytics, Sabanci University, Sabancı University, Sabanci University Analytics, Sabancı University Analytics, Sabanci, Sabancı, Sabancı Üniversitesi">
+        <title>SUAnalytics - Course Search</title>
+        <script>
+            let data;
+
+            fetch('../data/search-list.json')
+                .then(results => results.json())
+                .then(json_content => {
+                     data = json_content;
+            });
+        </script>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/course-search.css" />
+        <link rel="icon" type="image/png" href="../src/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-80JDD4DQES"></script>
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-80JDD4DQES');</script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="../" class="project-name no-select">SUAnalytics</a>
+                <div id="nav-mobile">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="../"><li>SUAnalytics</li></a><br>
+                        <a href="../program-analytics/"><li>Program Analytics</li></a><br>
+                        <a href="../course-search/"><li>Course Search</li></a><br>
+                        <a href="../about/"><li>About</li></a><br>
+                        <a href="mailto: "><li>Contact</li></a>
+                    </ul>
+                </div>
+                <ul id="nav-desktop">
+                    <li><a class="no-select" href="../program-analytics/">Program Analytics</a></li>
+                    <li><a class="no-select" href="../course-search/">Course Search</a></li>
+                    <li><a class="no-select" style="color: #C6333D;" href="../about/">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="course-search-container">
+            <h1>Course Search</h1>
+            <div class="course-search-wrapper" id="search-wrapper">
+                <input class="course-search-bar-input" id="course-search-bar" type="text" name="courseSearchBar" placeholder="Search a course" />
+            </div>
+            <ul class="course-search-list" id="course-search-list">
+                <!-- Filtered Course List -->
+            </ul>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-section footer-description">
+                    <a>SUAnalytics</a>
+                    <p>SUAnalytics is a project that aims to collect and analyze the data of various topics in Sabanci University, display them with fruitful visualizations and publish analyses about them.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-first">
+                    <a class="footer-link" style="border-right: 1px solid #FFFFFF;" href="../privacy-policy/">Privacy Policy</a>
+                    <a class="footer-link" href="../terms-and-conditions/">Terms & Conditions</a>
+                </div>
+                <div class="footer-bottom-second">
+                    <a>© 2021 - SUAnalytics</a>
+                    <a>All rights reserved.</a>
+                </div>
+            </div>
+        </footer>
+        
+        <div>
+            <a id="backtotop" style="display: none;" onclick="scrollToPosition(0)">
+                <i class='top-arrow-icon'></i>
+            </a>
+        </div>
+        <script src="../js/main.js"></script>
+        <script src="../js/course-search.js"></script>
+    </body>
+</html>
