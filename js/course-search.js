@@ -71,5 +71,5 @@ const displayCourses = (courses) => {
 };
 
 function goToCoursePage(courseCode) {
-    window.open("https://halperk.github.io/suanalytics/course-analytics/" + courseCode + "/");
+    window.open("https://halperk.github.io/suanalytics/course-analytics/" + courseCode + "/", "_self");
 }
