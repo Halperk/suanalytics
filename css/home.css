@@ -1,0 +1,191 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding-top: 20rem;
+    padding-bottom: 14rem;
+    background: #F5FFFF;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 3rem;
+    color: #004288;
+    font-weight: 700;
+}
+
+.welcome h3 {
+    padding-top: 1.2rem;
+    color: #555555;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.introduction {
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.counter-statistic-title {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #111111;
+    font-weight: 500;
+}
+
+.counter-statistics-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter-statistic {
+    flex: 1;
+    margin: 1rem;
+    padding: 3rem 0.5rem;
+    border-radius: 1rem;
+    background: #FCFCFC;
+}
+
+.counter-statistic:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem #DEE1E5;
+    background: #FEFEFE;
+}
+
+.counter-statistic-value {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #004288;
+}
+
+.value-second-color{
+    color: #C6333D;
+}
+
+.counter-statistic-name {
+    font-size: 1.2rem;
+    color: #777777;
+    margin-top: 0.4rem;
+}
+
+.counter-statistics-see-more {
+    padding: 1rem;
+    opacity: 0.75;
+}
+
+.counter-statistics-see-more:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.counter-statistics-see-more a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.features {
+    background: #F5FFFF;
+    text-align: center;
+    padding: 3rem;
+}
+
+.feature {
+    padding-bottom: 3rem;
+}
+
+.feature-main {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.feature-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-description {
+    margin: 1rem;
+}
+
+.feature-button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: #C6333D;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: 1px solid #C6333D;
+    text-decoration: none;
+}
+
+.feature-button:hover {
+    color: #C6333D;
+    background: #F5FFFF;
+}
+
+@media only screen and (max-width: 968px) { 
+
+    .counter-statistic-title {
+        font-size: 1.1rem;
+    }
+    
+    .counter-statistic-value {
+        font-size: 2rem;
+    }
+    
+    .counter-statistic-name {
+        font-size: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 720px) { 
+    
+    .welcome {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+    }
+
+    .welcome h2 {
+        font-size: 2rem;
+    }
+    
+    .welcome h3 {
+        font-size: 1.2rem;
+    }
+    
+    .counter-statistic-title {
+        font-size: 1rem;
+    }
+
+    .counter-statistics-wrapper {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 524px) { 
+
+    .welcome h2 {
+        font-size: 1.4rem;
+    }
+    
+    .welcome h3 {
+        font-size: 1rem;
+    }
+    
+    .counter-statistics-see-more a {
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+    
+    .introduction {
+        padding: 1rem;
+    }
+    
+}
