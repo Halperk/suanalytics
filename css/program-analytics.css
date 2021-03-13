@@ -1,0 +1,17 @@
+.program-analytics-banner {
+    background: #ECFCFE;
+    display: flex;
+    margin-top: 6rem;
+    padding: 8rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #004288;
+    text-align: center;
+}
+
+.program-analytics-stay-tuned {
+    text-align: center;
+    padding: 9rem 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
