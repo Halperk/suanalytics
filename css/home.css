@@ -69,12 +69,15 @@
     margin-top: 0.4rem;
 }
 
-.counter-statistics-see-more {
+.counter-statistics-see-more { 
     padding: 1rem;
+}
+
+.counter-statistics-see-more a {
     opacity: 0.75;
 }
 
-.counter-statistics-see-more:hover {
+.counter-statistics-see-more a:hover {
     cursor: pointer;
     opacity: 1;
 }
