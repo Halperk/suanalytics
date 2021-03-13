@@ -1,0 +1,91 @@
+.about-banner {
+    background: #ECFCFE;
+    display: flex;
+    margin-top: 6rem;
+    padding: 8rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #004288;
+}
+
+.about-profiles-title {
+    display: flex;
+    padding: 3rem 1rem 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: #FDFDFD;
+}
+
+.about-profiles {
+    background: #FDFDFD;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-profile {
+    cursor: pointer;
+    max-width: 450px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    padding: 1rem;
+    flex: 1;
+    box-shadow: 0 0 0.5rem #DEE1E5;
+}
+
+.about-profile:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 1.25rem #C1C4C8;
+}
+
+.about-profile-photo {
+    padding-top: 1.5rem;
+}
+
+.about-profile-photo-image {
+    width: 8rem;
+    border-radius: 4rem;
+}
+
+.about-profile-texts {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.about-profile-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-profile-name {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.about-profile-title {
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .about-profiles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-profile {
+        width: 100%;
+    }
+    
+}
