@@ -16,7 +16,7 @@ Program analytics include the analytics of all undergraduate programs offered by
 Course Analytics
 ---------------
 
-Course analytics include the analytics of all undergraduate and graduate courses offered by Sabancı University faculties throughout the university history. Analytics include course popularity, course student statistics, course instructor statistics, course pre-requisites, course co-requisities, and course catalog entry.
+Course analytics include the analytics of all undergraduate and graduate courses offered by Sabancı University faculties throughout the university history. Analytics include course popularity, course student statistics, course instructor statistics, course prerequisites, course corequisities, and course catalog entry.
 
 Program Analytics URL: https://halperk.github.io/suanalytics/course-search/
 
