@@ -29,7 +29,7 @@ Instructor analytics include the analytics of the instructors at Sabancı Univer
 
 - *Not ready yet*
 
-:tw-1f31f: - Our Voluntary Team
+Our Voluntary Team
 ---------------
 
 - Hüseyin Alper Karadeniz (Co-Founder, Programmer, Designer)
